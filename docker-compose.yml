@@ -1,0 +1,12 @@
+version: "3.3"
+services:
+  mongo:  
+    image: mongo:4.4.6
+    ports:
+      - "27020:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=root
+      - MONGO_INITDB_DATABASE=price
+    logging:
+        driver: none
